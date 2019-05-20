@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:43:15 by kamako            #+#    #+#             */
-/*   Updated: 2019/05/20 17:39:20 by kamako           ###   ########.fr       */
+/*   Updated: 2019/05/20 17:57:46 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 void		ft_putchar(char);
 void		ft_putstr(char *);
-int			ft-strlen(char *);
+int			ft_strlen(char *);
 char		*ft_strcpy(char *, char *);
 void		ft_swap(int *a, int *b);
 char		*ft_strdup(char *);
