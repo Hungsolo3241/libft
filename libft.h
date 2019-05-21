@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:43:15 by kamako            #+#    #+#             */
-/*   Updated: 2019/05/20 18:15:06 by kamako           ###   ########.fr       */
+/*   Updated: 2019/05/21 16:31:02 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,30 @@
 #include <stdlib.h>
 #include <string.h>
 
-void		ft_putchar(char);
+int			ft_isaplha(int c);
+int			ft_isalnum(int c);
+int			ft_isascii(int c);
+int			ft_isdigit(int c);
+int			ft_isprint(int c);
+int			ft_tolower(int c);
+int			ft_toupper(int c);
+void		ft_putchar(char c);
 void		ft_putstr(char *);
-size_t			ft_strlen(const char *s);
+int			ft_strlen(const char *s);
 char		*ft_strcpy(char *, char *);
 void		ft_swap(int *a, int *b);
 char		*ft_strdup(char *);
 int			ft_memcmp(const void *, const void *, size_t);
+char		*ft_strcpy(char *dst, const char *s2);
 char		*ft_strncpy(char *, char *, int);
 char		*ft_strcat(char *, char *);
 char		*ft_strncat(char *, char *, int);
 void		*ft_memset(void *, int, size_t);
+void		*ft_memcpy(void *dst, const void *src, size_t n);
+void		*ft_memccpy(void *dst, comst void *src, int c, sixe_t n);
+void		*ft_memmove(void *dst, const void *src, size_t len);
+void		*ft_memchr(const void *s, int c, size_t n);
+int			ft_memcmp(const void *s1, const void *s2, size_t n);
 void		ft_bzero(char *, int);
 void *		ft_memalloc(size_t size);
 void		ft_memdel(void **ap);
@@ -52,5 +65,6 @@ void		ft_putchar_fd(char const *s, int fd);
 void		ft_putstr_fd(char const *s, int fd);
 void		ft_putendl_fd(char const *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
+
 
 #endif
