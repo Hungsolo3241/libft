@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:43:15 by kamako            #+#    #+#             */
-/*   Updated: 2019/05/21 16:31:02 by kamako           ###   ########.fr       */
+/*   Updated: 2019/05/23 15:35:01 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,12 @@ int			ft_tolower(int c);
 int			ft_toupper(int c);
 void		ft_putchar(char c);
 void		ft_putstr(char *);
-int			ft_strlen(const char *s);
-char		*ft_strcpy(char *, char *);
+size_t		ft_strlen(const char *s);
 void		ft_swap(int *a, int *b);
 char		*ft_strdup(char *);
 int			ft_memcmp(const void *, const void *, size_t);
 char		*ft_strcpy(char *dst, const char *s2);
-char		*ft_strncpy(char *, char *, int);
+char		*ft_strncpy(char dst*,const char src*, size_t n);
 char		*ft_strcat(char *, char *);
 char		*ft_strncat(char *, char *, int);
 void		*ft_memset(void *, int, size_t);
