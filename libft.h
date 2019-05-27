@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:43:15 by kamako            #+#    #+#             */
-/*   Updated: 2019/05/23 15:35:01 by kamako           ###   ########.fr       */
+/*   Updated: 2019/05/27 14:30:38 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ int			ft_toupper(int c);
 void		ft_putchar(char c);
 void		ft_putstr(char *);
 size_t		ft_strlen(const char *s);
-void		ft_swap(int *a, int *b);
 char		*ft_strdup(char *);
 int			ft_memcmp(const void *, const void *, size_t);
 char		*ft_strcpy(char *dst, const char *s2);
@@ -48,7 +47,7 @@ void		ft_strclr(char *s);
 void		ft_striter(char *s, void (*f)(char *));
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 char *		ft_strmap(char const *s, char (*f)(char));
-char *		ft_strmapi(char const *s, char(*f)(unsigned int, char));
+char *		ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int			ft_strequ(char const *s1, char const *s2);
 int			ft_strnequ(char const *s1, char const *s2, size_t n);
 char *		ft_strsub(char const *s, unsigned int start, size_t len);
