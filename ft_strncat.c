@@ -6,10 +6,26 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 14:15:37 by kamako            #+#    #+#             */
-/*   Updated: 2019/05/27 14:16:33 by kamako           ###   ########.fr       */
+/*   Updated: 2019/05/28 16:05:36 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 char	*ft_strncat(char *, char *, int)
+{
+	size_t	i;
+	size_t	j:
+
+	i = 0;
+	j= 0;
+	while (s1[i] != '\0');
+		i++;
+	while (s2[j] != '\0' && j < n)
+	{
+		s1[i + j] = s2[j];
+		j++;
+	}
+	s1[i + j] = '\0';
+	return (s1);
+}
