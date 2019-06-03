@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:43:15 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/03 14:26:59 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/03 15:00:44 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ char		*ft_strncat(char *, char *, int);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strrchr(const char *s, int c);
+char		*ft_strstr(const char *s1, const char *s2);
 void		*ft_memset(void *, int, size_t);
 void		*ft_memcpy(void *dst, const void *src, size_t n);
 void		*ft_memccpy(void *dst, const void *src, int c, size_t n);
