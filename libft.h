@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:43:15 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/03 15:53:55 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/03 15:59:13 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char		*ft_strrchr(const char *s, int c);
 char		*ft_strstr(const char *s1, const char *s2);
 char		*ft_strnstr(const char *s1, const char *s2, size_t n);
 char		*ft_strdup(const char *s1);
-void		*ft_memset(void *, int, size_t);
+void		*ft_memset(void *b, int c, size_t len);
 void		*ft_memcpy(void *dst, const void *src, size_t n);
 void		*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void		*ft_memmove(void *dst, const void *src, size_t len);
