@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 15:33:21 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/04 16:01:23 by kamako           ###   ########.fr       */
+/*   Created: 2019/06/04 15:53:38 by kamako            #+#    #+#             */
+/*   Updated: 2019/06/04 15:57:21 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl(char const *s)
+void	ft_putstr_fd(const char *s, int fd)
 {
-	ft_putstr(s);
-	ft_putchar('\n');
+	write(fd, s, ft_strlen(s));
 }
