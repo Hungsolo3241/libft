@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:43:15 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/03 15:59:13 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/04 12:56:21 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void		*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void		*ft_memmove(void *dst, const void *src, size_t len);
 void		*ft_memchr(const void *s, int c, size_t n);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
-void		ft_bzero(char *, int);
+void		ft_bzero(void *s, size_t n);
 void *		ft_memalloc(size_t size);
 void		ft_memdel(void **ap);
 char *		ft_strnew(size_t size);
