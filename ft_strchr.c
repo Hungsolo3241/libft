@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 14:19:26 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/03 14:24:33 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/05 11:57:49 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s + i);
 		i++;
 	}
-	if (!c && s[i] == \'\0')
+	if (!c && s[i] == '\0')
 		return ((char *)s + i);
 	return (NULL);
 }
