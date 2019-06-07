@@ -6,10 +6,13 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 14:17:26 by kamako            #+#    #+#             */
-/*   Updated: 2019/05/27 14:18:13 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/07 14:18:52 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *		ft_strnew(size_t size)
+char		*ft_strnew(size_t size)
+{
+	return ((char *)ft_memalloc(size + 1));
+}
