@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:43:15 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/05 12:07:19 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/08 15:02:05 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int			ft_isaplha(int c);
+int			ft_isalpha(int c);
 int			ft_isalnum(int c);
 int			ft_isascii(int c);
 int			ft_isdigit(int c);
@@ -24,19 +24,13 @@ int			ft_isprint(int c);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
 void		ft_putchar(char c);
-void		ft_putstr(char *);
 size_t		ft_strlen(const char *s);
 int			ft_memcmp(const void *, const void *, size_t);
-char		*ft_strcpy(char *dst, const char *s2);
-char		*ft_strncpy(char dst*,const char src*, size_t n);
 void		ft_putstr(const char *s);
-int			ft_strlen(const char *s);
-char		*ft_strcpy(char *, char *);
-void		ft_swap(int *a, int *b);
-char		*ft_strdup(char *);
+size_t		ft_strlen(const char *s);
 int			ft_memcmp(const void *, const void *, size_t);
 char		*ft_strcpy(char *dst, const char *src);
-char		*ft_strncpy(char *, char *, int);
+char		*ft_strncpy(char *dst, const char *src, size_t n);
 int			ft_strcmp(const char *s1, const char *s2);
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
 char		*ft_strcat(char *s1, const char *s2);
