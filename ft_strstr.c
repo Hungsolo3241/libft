@@ -5,17 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/03 14:43:49 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/08 12:26:51 by kamako           ###   ########.fr       */
+/*   Created: 2019/06/10 15:25:15 by kamako            #+#    #+#             */
+/*   Updated: 2019/06/10 15:36:06 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtr(const char *s1, const char *s2)
+char	*ft_strstr(const char *s1, const char *s2)
 {
-	unsigned int i;
-	unsigned int j;
+	unsigned int	i;
+	unsigned int	j;
 
 	i = 0;
 	if (s1[0] == '\0' && s2[0] == '\0')

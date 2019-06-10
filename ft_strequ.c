@@ -6,10 +6,16 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 14:32:25 by kamako            #+#    #+#             */
-/*   Updated: 2019/05/27 14:33:24 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/10 16:07:01 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strequ(char const *s1, char const *s1)
+int		ft_strequ(char const *s1, char const *s2)
+{
+	if (s1 == s2)
+		return (1);
+	else
+		return (0);
+}

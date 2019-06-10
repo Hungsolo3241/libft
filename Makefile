@@ -6,7 +6,7 @@
 #    By: kamako <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/08 12:29:34 by kamako            #+#    #+#              #
-#    Updated: 2019/06/08 16:07:27 by kamako           ###   ########.fr        #
+#    Updated: 2019/06/10 16:22:57 by kamako           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRC = ft_atoi.c \
 	  ft_bzero.c \
 	  ft_isalpha.c \
 	  ft_isascii.c \
+	  ft_isalnum.c \
 	  ft_isdigit.c \
 	  ft_isprint.c \
 	  ft_memalloc.c \
@@ -51,6 +52,8 @@ SRC = ft_atoi.c \
 	  ft_strncmp.c \
 	  ft_strncpy.c \
 	  ft_strnew.c \
+	  ft_strequ.c \
+	  ft_strnequ.c \
 	  ft_strnstr.c \
 	  ft_strrchr.c \
 	  ft_strstr.c \
