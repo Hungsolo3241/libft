@@ -6,7 +6,7 @@
 #    By: kamako <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/08 12:29:34 by kamako            #+#    #+#              #
-#    Updated: 2019/06/13 14:12:19 by kamako           ###   ########.fr        #
+#    Updated: 2019/06/13 16:27:48 by kamako           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,6 +52,7 @@ SRC = ft_atoi.c \
 	  ft_strjoin.c \
 	  ft_strlcat.c \
 	  ft_strsplit.c \
+	  ft_strtrim.c \
 	  ft_strlen.c \
 	  ft_strncat.c \
 	  ft_strncmp.c \
