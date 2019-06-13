@@ -6,7 +6,7 @@
 #    By: kamako <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/08 12:29:34 by kamako            #+#    #+#              #
-#    Updated: 2019/06/13 10:23:20 by kamako           ###   ########.fr        #
+#    Updated: 2019/06/13 14:12:19 by kamako           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,6 +62,7 @@ SRC = ft_atoi.c \
 	  ft_strnstr.c \
 	  ft_strrchr.c \
 	  ft_strstr.c \
+	  ft_itoa.c \
 	  ft_tolower.c \
 	  ft_toupper.c \
 
