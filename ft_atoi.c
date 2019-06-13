@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 15:17:07 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/05 11:53:58 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/13 10:34:44 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int		ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		res = res * 10 + str[i] - 0;
+		res = res * 10 + (str[i] - '0');
 		i++;
 	}
 	return ((int)(res * sign));
