@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 15:53:38 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/04 15:57:21 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/14 15:18:22 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void	ft_putstr_fd(const char *s, int fd)
 {
+	if (!s || !fd)
+		return ;
 	write(fd, s, ft_strlen(s));
 }

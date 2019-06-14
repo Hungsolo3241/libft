@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 16:13:44 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/10 16:30:26 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/14 12:56:07 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_striter(char *s, void (*f)(char *))
 	unsigned int	i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i] != '\0')
 	{
 		f(s + i);

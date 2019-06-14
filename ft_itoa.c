@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 13:44:14 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/13 14:13:01 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/14 14:14:37 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_itoa(int n)
 		str[1] = '\0';
 		str = ft_strjoin(str, ft_itoa(-n));
 	}
-	else if (n >= 0)
+	else if (n >= 10)
 		str = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
 	else if (n < 10 && n >= 0)
 	{

@@ -6,7 +6,7 @@
 #    By: kamako <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/08 12:29:34 by kamako            #+#    #+#              #
-#    Updated: 2019/06/13 16:27:48 by kamako           ###   ########.fr        #
+#    Updated: 2019/06/14 16:11:20 by kamako           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,6 @@ SRC = ft_atoi.c \
 	  ft_strjoin.c \
 	  ft_strlcat.c \
 	  ft_strsplit.c \
-	  ft_strtrim.c \
 	  ft_strlen.c \
 	  ft_strncat.c \
 	  ft_strncmp.c \
@@ -70,24 +69,27 @@ SRC = ft_atoi.c \
 
 OBJ = $(SRC:.c=.o)
 
+CC = gcc
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@ar rc $(NAME) $(OBJ)
-	@echo "$(NAME) created"
-	@ranlib $(NAME)
-	@echo "$(NAME) indexed"
+	ar rc $(NAME) $(OBJ)
+	echo "$(NAME) created"
+	ranlib $(NAME)
+	echo "$(NAME) indexed"
 
-%.o: %.c
-	@gcc $(FLAG) -c $< -o $@
+$(OBJ): %.o: %.c
+	gcc $(FLAG) -c $< -o $@
+	echo "Objects created"
 
 clean:
-	@rm -f $(OBJ)
-	@echo "OBJ deleted"
+	rm -f $(OBJ)
+	echo "OBJ deleted"
 
 fclean: clean
-	@rm -f $(NAME)
-	@echo "$(NAME) deleted"
+	rm -f $(NAME)
+	echo "$(NAME) deleted"
 
 re: fclean all
 
