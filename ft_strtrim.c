@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 13:05:54 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/18 16:21:15 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/18 16:32:32 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strtrim(char const *s)
 	j = ft_strlen(s) - 1;
 	while (s[j] == ' ' || s[j] == '\n' || s[j] == '\t')
 		j--;
-	if (!(str = (char *)malloc(sizeof(char) * (j - i + 2))) == NULL)
+	if ((str = (char *)malloc(sizeof(char) * (j - i + 2))) == NULL)
 		return (NULL);
 	while (k < j - i + 1)
 	{
