@@ -1,40 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_memtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 14:52:17 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/15 17:17:45 by kamako           ###   ########.fr       */
+/*   Created: 2019/06/18 12:00:59 by kamako            #+#    #+#             */
+/*   Updated: 2019/06/18 14:10:43 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
+#include <stdlib.h>
 
-char	*ft_strjoin(char const *s1, char const *s2)
+void	ft_memtrim(char *s)
 {
-	int		i;
-	int		j;
-	char	*str;
+	unsigned int	i;
+	unsigned int	j;
+	char			*str;
 
 	i = 0;
 	j = 0;
-	if (!s1 || !s2)
-		return (NULL);
-	str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	while (s[j] == ' ' || s[j] == '\n' || s[i] == '\t')
+		j--;
+	str = (char *)malloc(sizeof(char) * (j - i + 2));
 	if (str == NULL)
 		return (NULL);
-	while (s1[i] != '\0')
-	{
-		str[i] = s1[i];
-		i++;
-	}
-	while (s2[j] != '\0')
-	{
-		str[i + j] = s2[j];
-		j++;
-	}
-	str[i + j] = '\0';
-	return (str);
 }

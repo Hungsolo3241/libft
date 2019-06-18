@@ -6,7 +6,7 @@
 /*   By: kamako <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:43:15 by kamako            #+#    #+#             */
-/*   Updated: 2019/06/15 13:08:05 by kamako           ###   ########.fr       */
+/*   Updated: 2019/06/18 15:40:24 by kamako           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,9 @@ int			ft_tolower(int c);
 int			ft_toupper(int c);
 void		ft_putchar(char c);
 size_t		ft_strlen(const char *s);
-int			ft_memcmp(const void *s1, const void *s2, size_t);
+int			ft_memcmp(const void *s1, const void *s2, size_t n);
 void		ft_putstr(const char *s);
 size_t		ft_strlen(const char *s);
-int			ft_memcmp(const void *, const void *, size_t);
 char		*ft_strcpy(char *dst, const char *src);
 char		*ft_strncpy(char *dst, const char *src, size_t n);
 int			ft_strcmp(const char *s1, const char *s2);
@@ -77,5 +76,8 @@ void		ft_putstr_fd(char const *s, int fd);
 void		ft_putendl_fd(char const *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 
+#endif
 
+#ifndef INT_MIN
+# define INT_MIN -2147483648
 #endif
